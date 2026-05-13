@@ -1,0 +1,26 @@
+{
+  "name": "builtform",
+  "owner": {
+    "name": "BuiltForm",
+    "url": "https://github.com/builtform"
+  },
+  "metadata": {
+    "description": "BuiltForm marketplace — independent plugins under the BuiltForm umbrella. LaunchPad (free, public) and Growth Toolkit (paid, private)."
+  },
+  "plugins": [
+    {
+      "name": "launchpad",
+      "description": "Autonomous AI coding harness for end-to-end software delivery across greenfield and brownfield codebases: picks the right stack for your new idea or detects your current stack if in brownfield. Scaffolds the infrastructure, then drives spec-driven development through the full pipeline (brainstorm → pick-stack → scaffold → define → plan → build → ship). Backed by a persistent governance kernel: context, quality gates, and learnings carry across sessions so each run starts informed instead of cold.",
+      "category": "development",
+      "source": { "source": "github", "repo": "builtform/launchpad" },
+      "homepage": "https://github.com/builtform/launchpad"
+    },
+    {
+      "name": "growth-toolkit",
+      "description": "Strategic growth workflows wired in as agents and skills. One slash command produces what you need at each stage of growing your company — customer discovery, positioning, sales pitch, offer, lead gen, pricing, copy, content, funnel, acquisition, retention, launch — from discovery through exit. Paid plugin — request access via the GitHub issue template at builtform/marketplace.",
+      "category": "marketing",
+      "source": { "source": "github", "repo": "builtform/growth-toolkit" },
+      "homepage": "https://github.com/builtform/marketplace#growth-toolkit-paid"
+    }
+  ]
+}

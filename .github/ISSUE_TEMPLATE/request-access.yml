@@ -1,0 +1,83 @@
+name: Request Growth Toolkit access
+description: Request access to the private builtform/growth-toolkit plugin
+title: "[ACCESS REQUEST] "
+labels: ["access-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in Growth Toolkit.
+
+        Growth Toolkit is a paid Claude Code plugin that operationalizes the full
+        growth lifecycle (customer discovery → positioning → sales pitch → offer →
+        lead gen → pricing → copy → content → funnel → acquisition → retention →
+        launch) as slash commands backed by agents and skills.
+
+        Please share a few details so we can evaluate access and grant your GitHub
+        account read permission on the private repo.
+
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+      placeholder: Jane Doe
+    validations:
+      required: true
+
+  - type: input
+    id: github-username
+    attributes:
+      label: Your GitHub username
+      description: We need this to grant repo access.
+      placeholder: janedoe
+    validations:
+      required: true
+
+  - type: input
+    id: contact-email
+    attributes:
+      label: Contact email
+      placeholder: jane@example.com
+    validations:
+      required: true
+
+  - type: input
+    id: company
+    attributes:
+      label: Company or project
+      placeholder: Acme Corp / acme.com
+    validations:
+      required: false
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: What stage is your company at?
+      options:
+        - Pre-launch / building MVP
+        - Launched, looking for first customers
+        - Growing, looking to scale
+        - Established, optimizing growth
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: How will you use Growth Toolkit?
+      description: What problems are you trying to solve? Which workflows matter most to you right now?
+      placeholder: |
+        e.g. "We just finished MVP and need to figure out positioning and the first
+        sales pitch before our beta launch in 6 weeks. Customer discovery and
+        positioning are our priority."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand Growth Toolkit is a paid plugin and access requires approval.
+          required: true
