@@ -2,6 +2,7 @@
   "name": "builtform",
   "owner": {
     "name": "BuiltForm",
+    "email": "support@builtform.ai",
     "url": "https://github.com/builtform"
   },
   "metadata": {
@@ -15,7 +16,8 @@
       "source": {
         "source": "git-subdir",
         "url": "builtform/launchpad",
-        "path": "plugins/launchpad"
+        "path": "plugins/launchpad",
+        "ref": "v2.1.3"
       },
       "homepage": "https://github.com/builtform/launchpad"
     },
