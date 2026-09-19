@@ -1,22 +1,37 @@
 # BuiltForm Marketplace
 
-The Claude Code marketplace for BuiltForm plugins.
+The marketplace for BuiltForm plugins, for Claude Code and Codex.
 
 ## Install
+
+### Claude Code
 
 ```
 /plugin marketplace add github:builtform/marketplace
 /plugin install launchpad@builtform        # free, public
-/plugin install growth-toolkit@builtform   # paid, private — see access section below
+/plugin install growth-toolkit@builtform   # paid, private (see the access section below)
 ```
 
 Restart Claude Code after install.
+
+### Codex
+
+```bash
+codex plugin marketplace add builtform/marketplace
+codex plugin add launchpad@builtform
+```
+
+Start a new Codex session, then run `$launchpad:lp help`. LaunchPad is the plugin available on Codex today; Growth Toolkit is Claude Code only. Details, the verified command list, and the differences from Claude Code are in [LaunchPad: How It Works, Codex](https://github.com/builtform/launchpad/blob/main/docs/guides/HOW_IT_WORKS.md#codex).
+
+To update on Codex, run `codex plugin marketplace upgrade builtform`, then `codex plugin add launchpad@builtform` again.
 
 ## Plugins
 
 ### LaunchPad
 
 Autonomous AI coding harness for spec-driven software delivery. Greenfield and brownfield. Free, open source. Full docs and source at [github.com/builtform/launchpad](https://github.com/builtform/launchpad).
+
+The listing follows the `stable` branch of the LaunchPad repository. That branch moves forward to each release only after the release checks pass, so both hosts always install the latest verified release.
 
 ### Growth Toolkit (paid)
 
